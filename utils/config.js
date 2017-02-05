@@ -2,14 +2,6 @@ function config() {
 
 }
 
-//TODO 首页先隐藏(app.json)
-/*{
- "pagePath": "pages/info/rcmStory/rcmStory",
- "iconPath": "images/menu/home.png",
- "selectedIconPath": "images/menu/homeHL.png",
- "text": "首页"
- },*/
-
 config.prototype = {
     //本地缓存--key名称
     LSKey: {},
