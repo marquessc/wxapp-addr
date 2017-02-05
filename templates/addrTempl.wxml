@@ -1,0 +1,23 @@
+<view>
+    <view class="ui-wrapper__item">
+        <picker bindchange="bindProvinceChange" value="{{provinceIndex}}" range="{{province}}">
+            <view class="fs-15 fc-555">
+                {{province[provinceIndex]}}
+            </view>
+        </picker>
+    </view>
+    <view class="ui-wrapper__item">
+        <picker bindchange="bindCityChange" value="{{cityIndex}}" range="{{city}}">
+            <view class="fs-15 fc-555">
+                {{city[cityIndex]}}
+            </view>
+        </picker>
+    </view>
+    <view class="ui-wrapper__item">
+        <picker bindchange="bindDistrictChange" value="{{districtIndex}}" range="{{district}}">
+            <view class="fs-15 fc-555">
+                {{district[districtIndex]}}
+            </view>
+        </picker>
+    </view>
+</view>

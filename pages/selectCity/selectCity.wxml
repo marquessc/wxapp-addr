@@ -1,0 +1,40 @@
+<import src="/templates/templates.wxml"/>
+<scroll-view scroll-y="true" scroll-into-view="{{toView}}" style="background-color: #ffffff;" class="container">
+
+    <view class="search-fixed-wrapper" id="searchWrapper" bindtap="gotoSearch">
+        <view class="search-box">
+            <icon class="serh-icon"></icon>
+            <input type="text" class="serh-text fs-13 fc-555" bindinput="bindInput" bindfocus="bindFocus" placeholder="搜索城市" />
+        </view>
+    </view>
+
+    <blcok wx:if="{{resCitys.length > 0}}">
+        <block wx:for="{{resCitys}}">
+            <view class="ui-citys__item font-normal-grey2" data-city="{{item}}" bindtap="selectCity">{{item}}</view>
+        </block>
+    </blcok>
+    <block wx:else>
+        <view class="ui-navBar">
+            <blcok wx:for="{{navBar}}">
+                <view bindtap="tapNavBar" data-nav="{{item}}">{{item}}</view>
+            </blcok>
+        </view>
+
+        <view class="ui-citys-container">
+            <view class="ui-hotCitys" id="hotCitys">
+                <view class="ui-Title font-normal-grey1">热门城市</view>
+                <block wx:for="{{hotCitys}}">
+                    <view class="ui-hotCitys__item" data-city="{{item}}" bindtap="selectCity">{{item}}</view>
+                </block>
+            </view>
+
+            <view class="ui-citys" id="citys">
+                <block wx:for="{{citys}}">
+                    <view class="ui-citys__item ui-citys__itemBg  font-normal-grey2" id="ui-citys__{{item.key}}">{{item.key}}</view>
+                    <view wx:for="{{item.val}}" wx:for-item="city" class="ui-citys__item font-normal-grey2" data-city="{{city}}" bindtap="selectCity">{{city}}</view>
+                </block>
+            </view>
+        </view>
+    </block>
+
+</scroll-view>

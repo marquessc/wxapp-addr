@@ -1,0 +1,89 @@
+.container{
+    padding-top: 100rpx;
+}
+.search-fixed-wrapper {
+    width: 90%;
+    padding: 2% 5% 2% 5%;
+    background-color: #fff;
+    border-bottom: 1rpx solid #f5f5f5;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+.search-fixed-wrapper .search-box {
+    background-color: #f5f5f5;
+    padding: 0 40rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    border-radius: 6rpx;
+}
+
+.search-fixed-wrapper .search-box .serh-icon {
+    height: 60rpx;
+}
+
+.serh-icon {
+    display: inline-block;
+    width: 38rpx;
+    height: 80rpx;
+    background-image: url(http://wxapp.pengyoujia.me/images/icons/search-icon.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: top;
+}
+
+.serh-text {
+    display: inline-block;
+    height: 60rpx;
+    line-height: 60rpx;
+    margin-left: 30rpx;
+    width: 80%;
+}
+
+.ui-navBar{
+    display: inline-block;
+    width: 60rpx;
+    height: 40rpx;
+    line-height: 40rpx;
+    text-align: center;
+    position: fixed;
+    top: 15%;
+    right: 10rpx;
+    font-size: 24rpx;
+    color: #999999;
+}
+
+.ui-Title{
+    padding: 0 40rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1px solid #fafafa;
+}
+
+.ui-hotCitys .ui-hotCitys__item{
+    display: inline-block;
+    width: 31%;
+    height: 80rpx;
+    line-height: 80rpx;
+    text-align: center;
+    font-size: 30rpx;
+    color: #555555;
+}
+
+.ui-citys__item{
+    padding: 0 40rpx;
+    height: 80rpx;
+    line-height: 80rpx;
+    border-top: 1px solid #fafafa;
+}
+
+.ui-citys__itemBg{
+    background-color: #fafafa;
+}
+
+.search-item-wrapper{
+    position: absolute;
+    top: 0;
+}

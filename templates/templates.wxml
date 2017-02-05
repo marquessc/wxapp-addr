@@ -1,0 +1,4 @@
+<!-- 地址选择  -->
+<template name="addCard">
+    <include src="/templates/addrTempl.wxml" />
+</template>

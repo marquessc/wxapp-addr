@@ -1,0 +1,9 @@
+<!--index.wxml-->
+<import src="/templates/templates.wxml"/>
+<view class="container">
+  <template is="addCard"
+            data="{{provinceIndex:city.provinceIndex,cityIndex:city.cityIndex,districtIndex:city.districtIndex,province:city.province,city:city.city[city.selectedProvince],district:city.district[city.selectedCity],oldPro:oldPro,oldCity:oldCity,oldArea:oldArea}}"/>
+</view>
+
+<view class="fs-15 fc-555" style="text-align: center;margin-top: 100rpx;padding: 40rpx;">{{sCity ? sCity : '地址列表选中的地址'}}</view>
+<button style="width: 80%;" bindtap="tapList">列表地址</button>
